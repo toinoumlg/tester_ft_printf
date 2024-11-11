@@ -1,6 +1,6 @@
 # tester_ft_printf
 .
-└── ft_printf/
+└── ft_printf/ \n
     ├── libft/
     │   ├── ft_atoi.c
     │   ├── ..
