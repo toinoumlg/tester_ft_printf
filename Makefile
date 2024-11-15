@@ -21,6 +21,9 @@ $(shell mkdir -p $(OBJ_DIR))
 
 all: $(EXEC)
 
+c:$(EXEC)
+	./$(EXEC)
+
 $(LIBFT_LIB):
 	$(MAKE) -C $(LIBFT_DIR)
 
@@ -36,7 +39,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 clean:
 	$(MAKE) -C $(LIBFT_DIR) clean
 	$(MAKE) -C $(FT_PRINTF_DIR) clean
-	rm -f $(OBJECTS)
+	rm -rf  $(OBJ_DIR)
 
 fclean: clean
 	$(MAKE) -C $(FT_PRINTF_DIR) fclean

@@ -1,9 +1,11 @@
 #include "../include/tester_ft_printf.h"
 
-int main(int ac, char **av)
+int main()
 {
-	if (ac != 2)
-		return 1;
-	if (av[1][0] == 'p')
-		run_test_c();
+	char *c = "blabla";
+	void *cdr;
+	cdr = c;
+	printf("Hello %s %x %X %p %u\n", "world", 0, 0, cdr, -3424);
+	ft_printf("Hello %s %x %X %p %u\n", "world", 0, 0, cdr, -3424);
+    return 0;
 }
